@@ -4,79 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programação web</title>
-    <style>
-        /* Estilo para o corpo da página */
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: larger;
-            background-color: rgb(236, 235, 230); /* Cor de fundo preta */
-            color: rgb(19, 19, 18); /* Cor do texto branca */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Coloca os itens em coluna */
-            height: 70vh; /* Altura da página */
-            box-sizing: border-box; /* Inclui padding e border no tamanho total dos elementos */
-            
-        }
-        /* Estilo para a barra de navegação */
-        .navbar {
-            display: flex;
-            justify-content: space-around; /* Espaça os links uniformemente */
-            background-color: #858383; /* Cor de fundo da barra de navegação */
-            border-radius: 15px; /* Bordas arredondadas */
-            width: 80%; /* Largura da barra de navegação */
-            padding: 10px 0; /* Espaçamento interno vertical */
-            position: fixed; /* Fixa a barra de navegação na parte superior */
-            top: 20px; /* Distância do topo da página */
-            z-index: 1000; /* Garante que a barra de navegação fica acima do conteúdo */
-        }
-        /* Estilo para os links da barra de navegação */
-        .navbar a {
-            color: rgb(14, 13, 13); /* Cor do texto */
-            padding: 14px 20px; /* Espaçamento interno */
-            text-align: center;
-            text-decoration: black; /* Remove sublinhado dos links */
-            transition: background-color 0.3s; /* Transição suave para o hover */
-            border-radius: 50px; /* Bordas arredondadas */
-        }
-        /* Efeito hover para os links da barra de navegação */
-        .navbar a:hover {
-            background-color: #ece6e6; /* Cor de fundo no hover */
-        }
-        /* Estilo para as seções de conteúdo */
-        .content {
-            display: none; /* Esconde o conteúdo por padrão */
-            text-align: center; /* Texto centralizado */
-            margin-top: 100px; /* Espaçamento acima das seções de conteúdo para não ficar atrás da navbar */
-            width: 80%; /* Largura do conteúdo */
-            overflow: hidden;
-            overflow-y: scroll;
-            
-        }
-        /* Mostra o conteúdo ativo */
-        .content.active {
-            display: block; /* Mostra o conteúdo ativo */
-            
-           
-        }
+    <link rel="stylesheet" href="/style.css" />
 
-        p{
-
-            text-align: justify;
-            font-style: oblique;
-            font-size:larger;
-           
-            
-
-        }
-
-
-
-
-    </style>
     <script>
         // Função para mostrar o conteúdo correspondente ao menu clicado
         function showContent(id) {
