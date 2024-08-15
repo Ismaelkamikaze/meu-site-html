@@ -1,67 +1,134 @@
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: larger;
-            background-color: rgb(236, 235, 230); /* Cor de fundo preta */
-            color: rgb(19, 19, 18); /* Cor do texto branca */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Coloca os itens em coluna */
-            height: 70vh; /* Altura da página */
-            box-sizing: border-box; /* Inclui padding e border no tamanho total dos elementos */
-            
-        }
-        /* Estilo para a barra de navegação */
-        .navbar {
-            display: flex;
-            justify-content: space-around; /* Espaça os links uniformemente */
-            background-color: #858383; /* Cor de fundo da barra de navegação */
-            border-radius: 15px; /* Bordas arredondadas */
-            width: 80%; /* Largura da barra de navegação */
-            padding: 10px 0; /* Espaçamento interno vertical */
-            position: fixed; /* Fixa a barra de navegação na parte superior */
-            top: 20px; /* Distância do topo da página */
-            z-index: 1000; /* Garante que a barra de navegação fica acima do conteúdo */
-        }
-        /* Estilo para os links da barra de navegação */
-        .navbar a {
-            color: rgb(14, 13, 13); /* Cor do texto */
-            padding: 14px 20px; /* Espaçamento interno */
-            text-align: center;
-            text-decoration: black; /* Remove sublinhado dos links */
-            transition: background-color 0.3s; /* Transição suave para o hover */
-            border-radius: 50px; /* Bordas arredondadas */
-        }
-        /* Efeito hover para os links da barra de navegação */
-        .navbar a:hover {
-            background-color: #ece6e6; /* Cor de fundo no hover */
-        }
-        /* Estilo para as seções de conteúdo */
-        .content {
-            display: none; /* Esconde o conteúdo por padrão */
-            text-align: center; /* Texto centralizado */
-            margin-top: 100px; /* Espaçamento acima das seções de conteúdo para não ficar atrás da navbar */
-            width: 80%; /* Largura do conteúdo */
-            overflow: hidden;
-            overflow-y: scroll;
-            
-        }
-        /* Mostra o conteúdo ativo */
-        .content.active {
-            display: block; /* Mostra o conteúdo ativo */
-            
-           
-        }
+/* Estilo para o corpo da página */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte da página */
+    background-color: rgb(238, 217, 202); /* Cor de fundo */
+    color: rgb(12, 5, 5); /* Cor do texto */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border no tamanho total dos elementos */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da tela */
+}
 
-        p{
+/* Estilo para a barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Espaça os links uniformemente */
+    background-color: #f0831d; /* Cor de fundo da barra de navegação */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 80%; /* Largura da barra de navegação */
+    padding: 10px 0; /* Espaçamento interno vertical */
+    position: fixed; /* Fixa a barra de navegação na parte superior */
+    top: 20px; /* Distância do topo da página */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 1000; /* Garante que a barra de navegação fica acima do conteúdo */
+}
 
-            text-align: justify;
-            font-style: oblique;
-            font-size:larger;
-           
-            
+/* Estilo para os links da barra de navegação */
+.navbar a {
+    color: rgb(248, 243, 243); /* Cor do texto */
+    padding: 14px 20px; /* Espaçamento interno */
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+    border-radius: 15px; /* Bordas arredondadas */
+}
 
-        }
+/* Efeito hover para os links da barra de navegação */
+.navbar a:hover {
+    background-color: #1f1b1b; /* Cor de fundo no hover */
+}
 
+/* Estilo para as seções de conteúdo */
+.content {
+    display: none; /* Esconde todas as seções por padrão */
+    flex: 1; /* Permite que o conteúdo ocupe o espaço disponível */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+    padding-top: 80px; /* Adiciona espaço acima para evitar sobreposição com a navbar */
+}
+
+.content.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo específico para o conteúdo de cada seção */
+.content h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.content p {
+    width: 100%; /* Define a largura do parágrafo para limitar o comprimento da linha */
+    text-align: center;
+}
+
+/* Estilo para o formulário de cadastro */
+.form-cadastro {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ee9848;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-cadastro h3 {
+    margin-bottom: 20px;
+    color: #fcfcfc;
+}
+
+.form-cadastro label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    color: #fcf4f4;
+}
+
+.form-cadastro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-cadastro button {
+    padding: 10px 20px;
+    background-color: #fffefe;
+    color: rgb(12, 1, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-cadastro button:hover {
+    background-color: #777;
+}
+
+/* Estilo para o rodapé */
+.footer {
+    background-color: #ee9848;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-links a {
+    color: rgb(252, 248, 248);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
