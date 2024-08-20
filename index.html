@@ -19,43 +19,115 @@
     </script>
 </head>
 <body>
-    <!-- Barra de navegação -->
+    <!-- Essa é a Barra de navegação -->
     <div class="navbar">
-        <a href="javascript:void(0)" onclick="showContent('home')">Home</a>
-        <a href="javascript:void(0)" onclick="showContent('about')">Sobre</a>
-        <a href="javascript:void(0)" onclick="showContent('services')">Serviços</a>
+        <a href="javascript:void(0)" onclick="showContent('home')">Quem sou?</a>
+        <a href="javascript:void(0)" onclick="showContent('about')">Formação e Experiências</a>
+        <a href="javascript:void(0)" onclick="showContent('services')">Portfólio</a>
         <a href="javascript:void(0)" onclick="showContent('contact')">Contato</a>
     </div>
 
     <!-- Seções de conteúdo -->
     <div id="home" class="content active">
-        <h2>Home</h2>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <h2>Quem sou?</h2>
+        <p>Me chamo Ismael Marques e sou estudante de Análise e Desenvolvimento de Sistemas, gosto de praticar atividade física. Busco conhecimento para auxíliar em minha carreira nesta área. Sou uma pessoa dedicada e com uma paixão por manter um estilo de vida equilibrado e ativo. Entre os meus hobbies, destaco:
+        </p>
+
+        <p>
+
+
+- Musculação: Dedico-me à musculação como uma forma de manter a saúde física e mental, além de ser uma excelente maneira de desafiar os meus limites e alcançar novos objetivos pessoais.
+
+<br>
+
+
+- Estudo de Análise e Desenvolvimento de Sistemas: Sou estudante nesta área, onde exploro o mundo da tecnologia e da programação. Estou sempre em busca de novos conhecimentos para aprimorar minhas habilidades e me preparar para desafios profissionais.
+
+
+<br>
+
+- Corrida: A corrida é outra paixão que me ajuda a manter o foco e a disciplina. A cada treino, busco superar minhas marcas pessoais, aproveitando o tempo ao ar livre para clarear a mente.
+
+
+<br>
+
+- Experiência no Exército: Servir no Exército foi uma experiência transformadora, onde aprendi sobre disciplina, trabalho em equipa e a importância de estar sempre preparado para desafios inesperados.</p>
+
+        <img src="imagehtml.png" />
+
+        
+
+    
      
     </div>
 
+    
+
     <div id="about" class="content">
-        <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <h2>Formação e Experiências</h2>
+        <br>
+        <p>- Estudo Análise e Desenvolvimento de Sistemas e atuo hoje na área de qualidade (QA) de software, trabalhando para manter a qualidade do produto realizando testes no sistema de diversas formas.</p>
+<br>
+
+        <p>- Formado em processos gerenciais em 2021.</p>
+
+        <br>
+
+        <p>- Curso técnico em Informática em 2018.</p>
+        
   
+        <img src="qa.png" />
+
+        
+
     </div>
 
     <div id="services" class="content">
         <h2>Serviços</h2>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Segue abaixo um trabalho sobre lógica de programação que realizei recentemente:
+             
+        </p>
+
+         <!-- Link para download do arquivo DOCX -->
+    <p>
+        <a href="MODULO A de 2024 - Logica de Programacao e Algoritmos.docx" download="MODULO A de 2024 - Logica de Programacao e Algoritmos.docx" style="color: #4b1df0; text-decoration: underline;">
+            Clique aqui para baixar o trabalho em DOCX
+        </a>
+
+        <br>
+
+        <br>
+
+        <img src="estudo.png" />
+
+    </p>
       
        
     </div>
 
     <div id="contact" class="content">
-        <h2>Informações de Contato</h2>
+        <h2>Informação para Contato</h2>
         <p>
 
-            E-mail:
 
-            Telefone:
+            <!-- Link para enviar e-mail -->
+            <a href="mailto:ismaelmarques300@gmail.com">ismaelmarques300@gmail.com</a>
+
+
+            <br>
+            <br>
+
+
+<!-- Link para o meu linkedin -->
+            <a href="https:www.linkedin.com/in/ismael-marques-074105266">Linkedin</a>
+
+
+
+
             
         </p>
+
+
         <!-- Formulário de Cadastro -->
         <form class="form-cadastro">
             <h3>Formulário para cadastro</h3>
@@ -65,8 +137,8 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             
-            <label for="senha">Telefone:</label>
-            <input type="phone" id="number" name="number" required>
+            <label for="message">Menssagem:</label>
+            <input type="message" id="number" name="number" required>
             
             <button type="submit">Cadastrar</button>
         </form>
